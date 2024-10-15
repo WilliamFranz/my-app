@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}Noticias{% endblock %}
+
+{% block content %}
+    <section class="news-section">
+        <h1>Últimas Noticias</h1>
+
+        <!-- Noticia 1 -->
+        <div class="news-item">
+            <img src="{{ url_for('static', filename='noti1.jpg') }}" alt="Noticia 1">
+            <div class="news-info">
+                <h2>Noticia</h2>
+                <p>Choferes de radiomóviles vuelven a la carga contra apps; quieren cita con Luis Arce</p>
+            </div>
+        </div>
+
+        <!-- Noticia 2 -->
+        <div class="news-item">
+            <img src="{{ url_for('static', filename='noti2.jpg') }}" alt="Noticia 2">
+            <div class="news-info">
+                <h2>Noticia</h2>
+                <p>El transporte federado alerta perjuicio y 'anarquía sindical' por parte del sector libre</p>
+            </div>
+        </div>
+
+        <!-- Noticia 3 -->
+        <div class="news-item">
+            <img src="{{ url_for('static', filename='noti3.jpg') }}" alt="Noticia 3">
+            <div class="news-info">
+                <h2>Noticia</h2>
+                <p>El transporte federado alerta perjuicio y 'anarquía sindical' por parte del sector libre</p>
+            </div>
+        </div>
+    </section>
+{% endblock %}

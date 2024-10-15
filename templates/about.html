@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block title %}Quiénes Somos{% endblock %}
+
+{% block content %}
+    <section class="about-us">
+        <!-- Resumen de la historia de la empresa -->
+        <h1>Quiénes Somos</h1>
+        <p>La empresa Radio Móvil Mineiro inicio sus operaciones un 30 de junio 2013 a cabeza del señor Eliud Abraham Copa Arias manejando 3 años a su cargo de gerente y representante legal, contaba con 5 movilidades, en la Zona/ Santiago Segundo Av./ 1 #24620. 
+            Hoy en día la empresa Radio Móvil Mineiro aumento su flota de móviles contando hasta el momento con 80 móviles para poder abastecer la demanda de llamadas telefónicas. Con un objetivo principal de lograr una permanente mejora en sus actividades a fin de dar un buen servicio a sus clientes y estos queden satisfechos.
+            </p>
+
+        <!-- Misión y Visión -->
+        <div class="mission-vision">
+            <h2>Nuestra Misión</h2>
+            <p>Es una empresa sólida y comprometida con sus clientes, ofreciéndoles el mejor servicio diferenciado en transporte de pasajeros, proporcionando un servicio rápido, seguro, cómodo y confiable. Contando con móviles conforme a su comodidad. Fuente: empresa “Radio Móvil Mineiro”.</p>
+            
+            <h2>Nuestra Visión</h2>
+            <p>Ser la empresa líder de transportes de pasajeros satisfaciendo las necesidades de nuestros clientes brindando un servicio de excelencia, para lograr un reconocimiento de nuestro servicio a nivel nacional. Fuente: empresa “Radio Móvil Mineiro”.</p>
+        </div>
+
+        <!-- Descripción del equipo de trabajo -->
+        <h2>Conoce a Nuestro Equipo</h2>
+        <div class="team">
+            <div class="team-member">
+                <img src="{{ url_for('static', filename='1.jpg') }}" alt="Miembro del Equipo 1">
+                <h3>Juan Pérez</h3>
+                <p>Fundador</p>
+            </div>
+            <div class="team-member">
+                <img src="{{ url_for('static', filename='2.jpeg') }}" alt="Miembro del Equipo 2">
+                <h3>Marío López</h3>
+                <p>Director de transporte</p>
+            </div>
+            <div class="team-member">
+                <img src="{{ url_for('static', filename='3.jpg') }}" alt="Miembro del Equipo 3">
+                <h3>Carlos García</h3>
+                <p>Gerente</p>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+

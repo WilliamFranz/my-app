@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block title %}Inicio{% endblock %}
+
+{% block content %}
+    <section class="home">
+        <!-- Logo y nombre de la empresa -->
+        <img src="{{ url_for('static', filename='logo.jpeg') }}" alt="Logo de la Empresa" class="logo">
+        <h1>
+        Empresa rapido movil Mineiro</h1>
+
+
+        <!-- Descripción del producto o servicio -->
+        <p>El servicio que prestan cuenta con todas las medidas de seguridad y bioseguridad tanto para el cliente como también para los conductores asiendo un mantenimiento y aseo estricto a las movilidades portando en cada una de ellas alcohol en gel y la desinfección del móvil después de brindar su servicio así estén aptos para dar el servicio.</p>
+        <br><br><br>
+        <!-- Testimonios de clientes -->
+        <h2>Lo que nuestros clientes dicen</h2>
+        <div class="testimonials">
+            <blockquote>
+                "El servicio es increíble, transformó completamente nuestra experiencia."
+                <cite>– Juan Pérez, usuario</cite>
+            </blockquote>
+            
+            <blockquote>
+                "Su servicio es excepcional, y los resultados superaron nuestras expectativas."
+                <cite>– María López, junta vecinal</cite>
+            </blockquote>
+        </div>
+<br><br><br>
+        <!-- Ventajas del producto o servicio -->
+        <h2>Ventajas de nuestros servicios</h2>
+        <ul class="advantages">
+            <li>Movilidades para cada cliente.</li>
+            <li>Atencion 24/7.</li>
+            <li>Precios competitivos en el mercado.</li>
+            <li>Más de 20 años de experiencia en el sector.</li>
+        </ul>
+        <br><br><br>
+        <!-- Botones de llamada a la acción -->
+        <div class="cta-buttons">
+            <a href="https://www.facebook.com/RADIOMOVILMINEIRO/?locale=es_LA" class="btn-primary">Contáctanos</a>
+            <a href="/services" class="btn-secondary">Conoce Nuestros Servicios</a>
+        </div>
+        <br><br><br>
+        <!-- Botones a redes sociales ficticias -->
+        <h2>Síguenos en nuestras redes sociales</h2>
+        <div class="social-icons">
+            <a href="#"><img src="{{ url_for('static', filename='facebook.png') }}" alt="Facebook"></a>
+            <a href="#"><img src="{{ url_for('static', filename='whatsapp.png') }}" alt="Twitter"></a>
+            <a href="#"><img src="{{ url_for('static', filename='instagram.png') }}" alt="Instagram"></a>
+        </div>
+    </section>
+    <br><br><br>
+{% endblock %}
+

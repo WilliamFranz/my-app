@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block title %}Servicios{% endblock %}
+
+{% block content %}
+    <section class="services-section">
+        <h1>Nuestros Servicios</h1>
+
+        <!-- Servicio 1 -->
+        <div class="service">
+            <img src="{{ url_for('static', filename='movil1.jpg') }}" alt="Servicio 1">
+            <div class="service-info">
+                <h2>Radio Taxi Extremo</h2>
+                <p>Radio Taxi Extremo es probablemente el servicio de radiotaxi más confiable de El Alto. Sus autos cumplen una puntualidad sobresaliente sea cual sea el punto de recogida. Además, sus chóferes expertos se aseguran de que el viaje sea cómodo y seguro.
+<br>
+                    🕒 Horario: Abierto las 24 horas ✔️
+                    <br>
+                    📍Dirección: Santiago Primerio, entre Calle 4 y Calle 5, El Alto, Bolivia
+                    <br>
+                    ♿ Servicios: Servicio de conductor designado, traslados al aeropuerto de El Alto, servicio de viajes nocturnos, permite el transporte y viaje con mascotas, servicio de radio taxi El Alto – La Paz.</p>
+            </div>
+        </div>
+
+        <!-- Servicio 2 -->
+        <div class="service">
+            <img src="{{ url_for('static', filename='movil2.jpg') }}" alt="Servicio 2">
+            <div class="service-info">
+                <h2>Radio Taxi Spirit 🚕</h2>
+                <p>Radio Taxi Spirit cuenta con unos chóferes que harán de tu viaje en radio taxi por El Alto una delicia. Radio Móvil Spirit presta servicios de radiotaxi rápidos y muy seguros gracias a la profesionalidad de su equipo, con recogidas cómodas y puntuales en el lugar que haya indicado el cliente.
+                    <br>
+                            🕒 Horario: Abierto las 24 horas ✔️
+                            <br>
+                            📍Dirección: Av. Luis Fuentes Manzano, Patio 5, 511, El Alto, Bolivia
+                            <br>
+                            ♿ Servicios: Transporte de pasajeros al aeropuerto durante las 24 horas del día, servicio puerta a puerta en El Alto, traslados El Alto – La Paz.</p>
+            </div>
+        </div>
+        
+        <!-- Servicio 3 -->
+        <div class="service">
+            <img src="{{ url_for('static', filename='movil3.jpg') }}" alt="Servicio 3">
+            <div class="service-info">
+                <h2>Radio Taxi Magnífico El Alto 🚕</h2>
+                <p>Radio Taxi Magnífico ofrece también sus servicios en la ciudad de El Alto. Con unos móviles puntuales y cómodos, hacen que los viajes de sus clientes sean dignos de repetir. Además, cumplen todo esto a unos precios muy económicos.
+<br>
+                    🕒 Horario: Abierto las 24 horas ✔️
+                    <br>
+                    📍Dirección: Villa Dolores, 11, El Alto
+                    <br>
+                    ♿ Servicios: Autos amplios para transporte de mercancías voluminosas, traslados al aeropuerto, servicio de delivery, servicio puerta a puerta.</p>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+
